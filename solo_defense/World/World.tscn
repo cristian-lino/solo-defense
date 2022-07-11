@@ -193,10 +193,10 @@ position = Vector2( 960, 160 )
 position = Vector2( 960, 416 )
 
 [node name="Skeleton" parent="." instance=ExtResource( 3 )]
-position = Vector2( 960, 64 )
+position = Vector2( 946, 39 )
 
 [node name="Skeleton2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 960, 512 )
+position = Vector2( 948, 541 )
 
 [connection signal="timeout" from="Load" to="." method="_on_Load_timeout"]
 [connection signal="killed" from="Zombie" to="." method="_on_Mob_killed"]
