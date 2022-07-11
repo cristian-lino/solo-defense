@@ -19,7 +19,6 @@ func _on_Load_timeout():
 	$Zombie3.show()
 	$Skeleton.show()
 	$Skeleton2.show()
-	
 
 func _on_Mob_screenExited():
 	get_tree().change_scene("res://World/GameOver.tscn")

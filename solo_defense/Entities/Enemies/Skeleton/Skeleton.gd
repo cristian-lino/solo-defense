@@ -6,10 +6,11 @@ signal killed
 onready var _animated_sprite = $AnimatedSprite
 onready var tween = $Tween
 onready var hitSound = $AudioStreamPlayer2D
+
 var screen_size
 var hasScreenExited = true
 
-var speed = 50
+var speed = 5
 export (float) var max_hp = 20
 
 onready var hp = max_hp setget _set_hp

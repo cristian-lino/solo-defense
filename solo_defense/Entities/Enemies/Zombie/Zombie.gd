@@ -6,10 +6,11 @@ signal killed
 onready var _animated_sprite = $AnimatedSprite
 onready var tween = $Tween
 onready var hitSound = $AudioStreamPlayer2D
+
 var screen_size
 var hasScreenExited = true
 
-var speed = 30
+var speed = 5
 export (float) var max_hp = 30
 
 onready var hp = max_hp setget _set_hp
@@ -28,7 +29,6 @@ func kill():
 	speed = 0
 	hasScreenExited = false
 	_animated_sprite.play("dead")
-	
 
 func damage(amount):
 	_set_hp(hp - amount)
